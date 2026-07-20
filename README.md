@@ -7,6 +7,7 @@
 | 文件夹 | 说明 | 核心知识点 |
 | :--- | :--- | :--- |
 | [01_baby_naming](./01_baby_naming) | 根据姓氏和性别起名 | PromptTemplate, LCEL |
+| [02_few_shot_antonym](./02_few_shot_antonym) | 少样本反义词生成 | FewShotPromptTemplate, 示例模板 |
 
 ## 🔧 如何运行
 
