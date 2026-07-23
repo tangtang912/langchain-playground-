@@ -9,6 +9,7 @@
 | [01_baby_naming](./01_baby_naming) | 根据姓氏和性别起名 | PromptTemplate, LCEL |
 | [02_few_shot_antonym](./02_few_shot_antonym) | 少样本反义词生成 | FewShotPromptTemplate, 示例模板 |
 | [03_chat_history_placeholder](./03_chat_history_placeholder) | 带历史记录的对话作诗 | ChatPromptTemplate, MessagesPlaceholder, ChatTongyi |
+| [04_chain_with_parser](./04_chain_with_parser) | 链式调用与输出解析器 | LCEL管道符, StrOutputParser, 多模型串联 |
 ## 🔧 如何运行
 
 1.  复制 `.env.example` 为 `.env` 并填入你的 API Key。
