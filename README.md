@@ -12,6 +12,7 @@
 | [04_chain_with_parser](./04_chain_with_parser) | 链式调用与输出解析器 | LCEL管道符, StrOutputParser, 多模型串联 |
 | [05_json_parser_and_stream](./05_json_parser_and_stream) | JSON解析与流式传输 | JsonOutputParser, stream(), 多步骤链 |
 | [06_runnable_lambda](./06_runnable_lambda) | 自定义函数注入链 | RunnableLambda, 自定义逻辑 |
+| [07_csv_loader](./07_csv_loader) | CSV 数据加载与解析 | CSVLoader, 懒加载迭代器 |
 ## 🔧 如何运行
 
 1.  复制 `.env.example` 为 `.env` 并填入你的 API Key。
