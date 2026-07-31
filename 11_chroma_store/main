@@ -1,0 +1,39 @@
+from langchain_chroma import Chroma
+from langchain_community.embeddings import DashScopeEmbeddings
+from langchain_community.document_loaders import CSVLoader
+
+# 1. 创建 Chroma 向量存储对象（数据持久化到磁盘）
+vector_store=Chroma(
+  collection_name="test",
+  embedding_function="DashScopeEmbeddings",
+  persist_dictionary="../chroma_db"
+  )
+
+# 2. 加载 CSV 数据（路径：回到上级目录，进入 data 文件夹）
+loader=loader.CSVLoader(
+  file_pathh="../data/info.csv",
+  encoding="utf-8"
+  )
+
+documents=loader.load()
+
+# 3. 新增文档到向量库
+vector_store.add_document(
+  documents=documents,
+  ids=["id"+str(i) for i in range(1,len(documents)+1)]
+  )
+
+# 4. 删除文档（演示删除功能）
+vector_store.delete(["id1","id2"])
+
+# 5. 基础相似度检索（返回最相关的 3 条）
+vector_store.similarity_search(
+  query="python是不是很简单呀“，
+  k=3
+  )
+# 6.打印输出
+print("\n===== 基础检索结果（最相关的3条） =====")
+for i, doc in enumerate(result, 1):
+    print(f"{i}. {doc.page_content}")
+    print(f"   来源: {doc.metadata.get('source', '未知')}")
+    print("-" * 40)
