@@ -16,6 +16,7 @@
 | [08_json_loader](./08_json_loader) | JSON / JSON Lines 数据加载 | `JSONLoader`, `jq_schema`, `json_lines` |
 | [09_pdf_loader](./09_pdf_loader) | PDF 文档加载（含密码） | `PyPDFLoader`, `mode="page"/"single"`, 密码保护 |
 | [10_text_splitter](./10_text_splitter) | 长文本递归分割 | `RecursiveCharacterTextSplitter`, `chunk_size`, `chunk_overlap` |
+| [11_vector_store](./11_vector_store) | 向量存储与相似度检索 | InMemoryVectorStore, DashScopeEmbeddings, add/delete/search |
 ## 🔧 如何运行
 
 1.  复制 `.env.example` 为 `.env` 并填入你的 API Key。
