@@ -19,6 +19,7 @@
 | [11_vector_store](./11_vector_store) | 向量存储与相似度检索 | InMemoryVectorStore, DashScopeEmbeddings, add/delete/search |
 | [11_chroma_store](./11_chroma_store) | Chroma 持久化向量库 | Chroma, 持久化存储, 元数据过滤 |
 | [12_rag_pipeline](./12_rag_pipeline) | 完整 RAG 检索增强生成 | 向量检索 + 提示词拼接 + LLM 生成 |
+| [13_rag_passthrough_retriever](./13_rag_passthrough_retriever) | LCEL 分支数据流 | RunnablePassthrough, as_retriever, 标准RAG链 |
 ## 🔧 如何运行
 
 1.  复制 `.env.example` 为 `.env` 并填入你的 API Key。
